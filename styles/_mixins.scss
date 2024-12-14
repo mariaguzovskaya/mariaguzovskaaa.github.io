@@ -1,0 +1,59 @@
+@mixin button-styles ($color, $border-color) {
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 57px;
+    border-radius: 30px;
+    border: 2px solid;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+    color: $color;
+    border-color: $border-color;
+}
+
+@mixin box-style {
+    display: flex;
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 692px;
+    text-align: left;
+    position: relative;
+    flex-direction: column;
+}
+
+@mixin box-elements ($content, $bg-color) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: $bg-color;
+    color: $secondary-color;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font-size: 0.56rem;
+    font-family: serif;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: center;
+}
+
+@mixin box-elements-1024 {
+    width: 46px;
+    height: 46px;
+    top: -20px;
+    left: -20px;
+    font-size: 0.48rem;
+    line-height: 46px;
+}
+
+@mixin box-elements-768 {
+    width: 56px;
+    height: 56px;
+    top: -25px;
+    left: -25px;
+    font-size: 0.56rem;
+    line-height: 56px;
+}

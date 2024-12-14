@@ -1,0 +1,36 @@
+.moodboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1896px;
+
+    &__item {
+        width: calc((100%)/2);
+        height: 595px;
+        padding: 12px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .moodboard {
+        &__item {
+            height: 316px;
+            padding: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .moodboard {
+        &__item {
+            height: 227px;
+            padding: 6px;
+        }
+    }
+}

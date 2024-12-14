@@ -1,0 +1,58 @@
+.box {
+    @include box-style;
+
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+}
+
+.box--red::before {
+    @include box-elements ('HOT!', rgba(211, 59, 59, 1));
+}
+
+.box--green::before {
+    @include box-elements ('NEW!', rgba(179, 225, 81, 1));
+}
+
+.box--orange::before {
+    @include box-elements ('HIT!', rgba(229, 164, 52, 1));
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+        width: calc((100% - 2 * 92px) / 3);
+        max-width: 253px;
+
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+
+        &::before {
+            @include box-elements-1024;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        max-width: 692px;
+        flex-direction: row;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin: 0 0 58px 0;
+        }
+
+        &::before {
+            @include box-elements-768;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        max-width: 300px;
+        flex-direction: column;
+        width: 100%;
+    }
+}

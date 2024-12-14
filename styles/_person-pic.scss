@@ -1,0 +1,25 @@
+.person-pic {
+    &__image {
+        width: 100%;
+        max-width: 398px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .person-pic {
+        &__image {
+            max-width: 282px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person-pic {
+
+        &__image {
+            max-width: 251px;
+            margin: 0 auto 20px;
+        }
+    }
+}

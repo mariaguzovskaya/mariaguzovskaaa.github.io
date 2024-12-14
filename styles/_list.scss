@@ -1,0 +1,28 @@
+.list {
+    margin-bottom: 60px;
+
+    &__item {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        margin-bottom: 50px;
+
+        &__item {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        margin-bottom: 40px;
+
+        &__item {
+            font-size: 0.88rem;
+        }
+    }
+}

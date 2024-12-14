@@ -1,0 +1,38 @@
+.box-pic {
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        max-width: 360px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .box-pic {
+
+        &__image {
+            max-width: 252px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box-pic {
+        margin-right: 24px;
+
+        &__image {
+            max-width: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box-pic {
+        margin-right: 0;
+
+        &__image {
+            max-width: 300px;
+        }
+    }
+}

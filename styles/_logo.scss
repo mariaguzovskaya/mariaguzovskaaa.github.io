@@ -1,0 +1,12 @@
+.logo {
+   font-size: 2rem;
+   color: $secondary-color;
+
+}
+
+@media screen and (max-width: 1024px) {
+   .logo {
+      font-size: 1.4rem;
+      font-weight: 400;
+   }
+}

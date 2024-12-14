@@ -1,0 +1,44 @@
+.person-text {
+
+    &__subtitle {
+        font-weight: 300;
+        margin: 30px 0;
+        color: rgba(71, 71, 71, 1);
+    }
+
+    &__description {
+        max-width: 939px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .person-text {
+
+        &__subtitle {
+            font-size: 0.88rem;
+        }
+
+        &__description {
+            max-width: 691px;
+            font-size: 0.88rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person-text {
+
+        &__subtitle {
+            font-size: 0.8rem;
+            margin: 20px 0;
+        }
+
+        &__description {
+            max-width: 626px;
+            font-size: 0.8rem;
+        }
+    }
+}

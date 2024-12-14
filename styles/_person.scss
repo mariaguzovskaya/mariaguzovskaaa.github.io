@@ -1,0 +1,16 @@
+.person {
+    background-color: $primary-color;
+    padding: $primary-padding;
+}
+
+@media screen and (max-width: 1024px) {
+    .person {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person {
+        padding: 70px;
+    }
+}
